@@ -1,5 +1,6 @@
-Feature: Getting user from API
+Feature: Create a user from API
 
-  Scenario: Get user list from API
-    Given user hit the get user api
-    Then user verify the result from response
+  Scenario: Create a user from API
+    Given user hit the delete user api
+    Then user get 204 as status code after user deleted
+    Then user verify the user has been deleted
